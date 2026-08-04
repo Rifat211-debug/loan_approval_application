@@ -17,6 +17,23 @@ Two stage model :
 ## Config
 - See `config.yaml` for runtime parameters (models paths)
 
+## To install/freeze additional libraries using UV :
+```bash
+uv pip install -r requirements.txt
+uv pip freeze > requirements.txt
+```
+
+## git Instructions :
+```bash
+git init
+git add .
+git commit -m "message"
+git remote add origin http://url_of_your_git_repo.git
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+```
+
 ## Note :
 - Make sure the version used to create the model is same as your local environment where you are testing the main.py and streamlit app.
-- We are using python 13.5 for our virtual environment.
+- We are using python 3.13.5 for our virtual environment.
+
